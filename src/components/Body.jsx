@@ -4,9 +4,9 @@ import certificateimg from "../img/udemy-certificate.jpg";
 function Body() {
     return (
         <div>
-            <header className="App-header background-image">
+            <div className="App-header background-image">
             <h1 className='app-h1'>Bem vindos!! Esse é o meu Portfólio.</h1>
-          </header>
+          </div>
     
           <div className='app-column'>
           <div className='app-aboutme'>
@@ -86,7 +86,7 @@ function Body() {
       </div>
       <div className="app-certificate-p">
         <h2>Certificado do Curso Full-Stack da Angela Yu:</h2>
-        <h3></h3>
+        
         </div>
      </div>
     </div>
@@ -95,7 +95,7 @@ function Body() {
           </div>
         </div>
     )
-    
+     
 }
 export default Body
 

@@ -4,19 +4,15 @@ import img from "../img/portfolio.png";
 
 
 
-function Header() {
+function Header(props) {
 
-//     e.target.children[1].children[0].children[index].children[0].children[1].innerHTML = ""
-
-
-  
     return (
             <header id="header" className="header">
             <div className="portfolio-image-name">
             <img id="portfolio-pic" src={img} alt="selfie for portfolio" />
             <div className="portfolio-name">
             <span className="nome">Ramon Fávero</span>
-            <span className="subnome">soon to be front-end dev</span>
+            <span className="subnome">{props.headerSubTitle}</span>
             </div>
               </div>
               <div className="header-list-div">

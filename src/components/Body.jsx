@@ -10,17 +10,21 @@ function Body() {
     return (
         <div>
             <div className="App-header background-image">
-            <h1 className='app-h1'>Bem vindos!! Esse é o meu Portfólio.</h1>
-          </div>
+              <div className="app-p-box">
+            <p className='app-p'>{Bodycontent[0].title}</p>
+            <p className='app-p2'>{Bodycontent[0].title2}</p>
+            <p className='app-p3'>{Bodycontent[0].title3}</p>
+        </div>
+            </div>
           <div className='app-column'>
           <Bodycard 
-      title={Bodycontent[0].title} 
-      corpo={Bodycontent[0].corpo} /> 
+      title={Bodycontent[1].title} 
+      corpo={Bodycontent[1].corpo} /> 
       <Bodytec />
       <Bodycertificate 
-      title={Bodycontent[1].title}
-      img={Bodycontent[1].img}
-      corpo={Bodycontent[1].corpo} />
+      title={Bodycontent[2].title}
+      img={Bodycontent[2].img}
+      corpo={Bodycontent[2].corpo} />
       </div> 
       </div>
           

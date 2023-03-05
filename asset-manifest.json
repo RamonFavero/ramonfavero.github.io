@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/ramonportfolio/static/css/main.78b48f17.css",
-    "main.js": "/ramonportfolio/static/js/main.7f3ea882.js",
+    "main.css": "/ramonportfolio/static/css/main.3d267484.css",
+    "main.js": "/ramonportfolio/static/js/main.e6c07c50.js",
     "static/media/portfolio.png": "/ramonportfolio/static/media/portfolio.e3474c0f8b5a13a48161.png",
-    "static/media/udemy-certificate.jpg": "/ramonportfolio/static/media/udemy-certificate.abf5aa7f4678d4d9e223.jpg",
     "static/media/workspace-with-computer.jpg": "/ramonportfolio/static/media/workspace-with-computer.d95c8f01b67b3b527697.jpg",
     "index.html": "/ramonportfolio/index.html",
-    "main.78b48f17.css.map": "/ramonportfolio/static/css/main.78b48f17.css.map",
-    "main.7f3ea882.js.map": "/ramonportfolio/static/js/main.7f3ea882.js.map"
+    "main.3d267484.css.map": "/ramonportfolio/static/css/main.3d267484.css.map",
+    "main.e6c07c50.js.map": "/ramonportfolio/static/js/main.e6c07c50.js.map"
   },
   "entrypoints": [
-    "static/css/main.78b48f17.css",
-    "static/js/main.7f3ea882.js"
+    "static/css/main.3d267484.css",
+    "static/js/main.e6c07c50.js"
   ]
 }

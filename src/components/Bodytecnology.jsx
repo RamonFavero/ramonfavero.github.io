@@ -1,47 +1,13 @@
 import React from "react";
 
-import Bodycontent from '../bodycontent';
-import Bodycard from "./Bodyapresentation";
-import Bodycertificate from "./Bodycertificate";
-import Bodytec from "./Bodytecnology";
-
-function Body() {
-  
+function Bodytec() {
     return (
-        <div>
-            <div className="App-header background-image">
-            <h1 className='app-h1'>Bem vindos!! Esse é o meu Portfólio.</h1>
-          </div>
-          <div className='app-column'>
-          <Bodycard 
-      title={Bodycontent[0].title} 
-      corpo={Bodycontent[0].corpo} /> 
-      <Bodytec />
-      <Bodycertificate 
-      title={Bodycontent[1].title}
-      img={Bodycontent[1].img}
-      corpo={Bodycontent[1].corpo} />
-      </div> 
-      </div>
-          
-       /*   <div className='app-aboutme'>
-               <h1 className='app-mainh1'>{props.title}</h1>
-              
-        
-    <div className='app-aboutme-description hover-effect'>
-      <div>
-         <p>{props.corpo}</p>
-         </div>
-    </div>
-          </div>
-    
-    
-          <div className='app-aboutme '>
+        <div className='app-aboutme '>
          <div>
-         <h1 className='app-mainh1'>{props.title}</h1>
+         <h1 className='app-mainh1'>Tecnologias</h1>
         
          </div>
-    <div className='app-tec-description hover-effect'>
+        <div className='app-tec-description hover-effect'>
     <div>
     <svg viewBox="0 0 128 128">
                 <path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"></path><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"></path>
@@ -85,25 +51,7 @@ function Body() {
               </div>
     </div>
     </div>
-    <div className='app-aboutme'>
-               <h1 className='app-mainh1'>Certificados</h1>
-              
-        
-    <div className='app-certificate-description hover-effect'>
-      <div>
-      <img id="certificateimg" src={certificateimg} alt="udemy certificate" />
-      </div>
-      <div className="app-certificate-p">
-        <h2>Certificado do Curso Full-Stack da Angela Yu:</h2>
-        
-        </div>
-     </div>
-    </div>
-          */
-       
     )
-     
 }
-export default Body
 
-
+export default Bodytec

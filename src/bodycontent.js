@@ -1,0 +1,14 @@
+const bodycontent = [
+{
+    id:1,
+    title:"Apresentação",
+    corpo:"Estou no 2º periodo do meu tecnólogo em Análise e desenvolvimento de sistemas na UVA. Tenho fluência em inglês e com isso fiz o curso da Angela Yu no Udemy :https://www.udemy.com/course/the-complete-web-development-bootcamp/ Tenho grande interesse em back-end e por isso estou mais focado em NodeJS. Estou em busca de uma vaga de estágio para iniciar minha carreira de programação.",
+},
+{id:2,
+title:"Certificados",
+img:"/ramonportfolio/static/media/udemy-certificate.abf5aa7f4678d4d9e223.jpg",
+corpo:"Certificado do Curso Full-Stack da Angela Yu:"
+}   
+]
+
+export default bodycontent

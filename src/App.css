@@ -210,11 +210,15 @@ padding-right: 10px;
   width: 60px;
   height: 60px;
 }
+.imageparent{
+  width: 500px;
+}
 
 #certificateimg{
  padding: 15px;
- width: 100%;
- height: 400px;
+ display: block;
+  width: 100%;
+  height: auto;
 }
 
 .app-certificate-description{

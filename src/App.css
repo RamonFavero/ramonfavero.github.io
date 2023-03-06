@@ -23,21 +23,25 @@
   
   height: 50px;
   display: flex;
-  flex-direction: column;
+ 
   padding-top: 10px;
 }
 .nome{
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 500;
   color: transparent;
-  padding: 7px;
+  padding-left: 12px;
 }
 .subnome{
+  height: 10px;
+  font-weight: 400;
+  padding-top: 10px;
   padding-left: 5px;
 color: transparent;
 }
 
 #header {
+
   top: 0;
   left: 0;
   width: 120px;

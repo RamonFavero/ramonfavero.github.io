@@ -12,9 +12,11 @@ function Header(props) {
             <img id="portfolio-pic" src={img} alt="selfie for portfolio" />
             <div className="portfolio-name">
             <span className="nome">Ramon Fávero</span>
-            <span className="subnome">{props.headerSubTitle}</span>
             </div>
               </div>
+              <div className="subnome">
+            <span >{props.headerSubTitle}</span>
+            </div>
               <div className="header-list-div">
                 <ul>
               <li className="header-li header-options-text"><a href="#apresentation" className="headericon-row" ><Icon className="header-icon" icon="bx:home-alt" /><span>  Home</span></a></li>

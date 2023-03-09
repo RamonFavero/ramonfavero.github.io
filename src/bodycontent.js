@@ -12,7 +12,7 @@ headerSubTitle:"Estudante de Analise e desenvolvimento de sistemas"
 },
 {id:3,
 title:"Certificados",
-img:"https://raw.githubusercontent.com/RamonFavero/ramonportfolio/main/src/img/udemy-certificate.jpg",
+img:"https://raw.githubusercontent.com/RamonFavero/ramonportfolio/main/src/img/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg",
 corpo:"Certificado do Curso Full-Stack da Angela Yu:"
 
 }   

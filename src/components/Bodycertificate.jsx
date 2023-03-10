@@ -4,10 +4,14 @@ import React from "react";
 
 function Bodycertificate(props) {
     return (
+    
+       
         <div className='app-aboutme'>
-        <h1 className='app-mainh1'>{props.title}</h1>
-        <div className='app-certificate-description hover-effect'>
+        
+        <div className='app-certificate-description'>
+       
         <div className="imageparent">
+          
         <img id="certificateimg" src={props.img} alt="udemy certificate" />
         </div>
         <div className="app-certificate-p">
@@ -16,7 +20,7 @@ function Bodycertificate(props) {
           </div>
        </div>
       </div>
-       
+    
     )
 }
 

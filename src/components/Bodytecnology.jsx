@@ -1,11 +1,25 @@
 import React from "react";
 import Bodycontent from '../bodycontent';
-import img from "../img/portfolio.png";
+import img from "../img/WhatsApp Image 2023-03-09 at 22.28.17.jpeg";
 
 function Bodytec(props) {
     return (
         <div className='app-aboutme '>
-        
+        <div className="app-tec-descri2">
+    <div className="portfolio-image-name">
+            <img id="portfolio-pic" src={img} alt="selfie for portfolio" />
+            <div>
+            <div className="portfolio-name">
+            <span className="nome">Ramon Fávero Peres de Moraes</span>
+            </div>
+
+            <div className="subnome">
+            <span >{Bodycontent[0].headerSubTitle}</span>
+            </div>
+            </div>
+              </div>
+              
+    </div>
         <div className='app-tec-description'>
         <div>
          <h1 className='app-mainh1'>Tecnologias</h1>
@@ -53,17 +67,7 @@ function Bodytec(props) {
               <h3>Git</h3>
               </div>
     </div>
-    <div className="app-tec-descri2">
-    <div className="portfolio-image-name">
-            <img id="portfolio-pic" src={img} alt="selfie for portfolio" />
-            <div className="portfolio-name">
-            <span className="nome">Ramon Fávero</span>
-            </div>
-              </div>
-              <div className="subnome">
-            <span >{Bodycontent[0].headerSubTitle}</span>
-            </div>
-    </div>
+    
     </div>
     )
 }

@@ -21,6 +21,7 @@ function Body() {
       title={Bodycontent[1].title} 
       corpo={Bodycontent[1].corpo} /> 
       <Bodytec />
+      <h1 className='app-mainh1certificado'>Certificados</h1>
       <Bodycertificate 
       title={Bodycontent[2].title}
       img={Bodycontent[2].img}

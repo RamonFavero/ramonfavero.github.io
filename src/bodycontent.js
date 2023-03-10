@@ -3,7 +3,7 @@ const bodycontent = [
         title:"Olá, seja bem vindo.",
 title2:"Eu sou Ramon Fávero",
 title3:"Morador do Rio de Janeiro, Estudante de programação Fullstack com um apreço muito grande por Back-end.",
-headerSubTitle:"Estudante de Analise e desenvolvimento de sistemas"
+headerSubTitle:"Estudante de Análise e desenvolvimento de sistemas na UVA - Tijuca"
     },
 {
     id:2,

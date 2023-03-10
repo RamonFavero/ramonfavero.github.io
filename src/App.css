@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 * {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box; 
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  color: rgb(0,0,0,0.529);
+  
 }
 
 #portfolio-pic{
@@ -28,16 +32,15 @@
 }
 .nome{
   font-size: 25px;
-  font-weight: 500;
-  color: transparent;
+  font-weight: 900;
+
   padding-left: 12px;
 }
 .subnome{
   height: 10px;
-  font-weight: 400;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-left: 5px;
-color: transparent;
+
 }
 
 #header {
@@ -47,18 +50,11 @@ color: transparent;
   width: 120px;
   height:100%;
   position:fixed;
-  background-color: #3a94c1;
+  background-color:transparent;
   transition:150ms;
   
 }
-#header:hover{
-  color: #0f3953;
-  width: 250px;
-}
-.header:hover span{
- transition: 1s;
-  color: #081f2e;
-}
+
 
 
 
@@ -91,7 +87,7 @@ ul {
   flex-direction: row;
 }
 .header-options-text span{
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   color:transparent;
   padding: 3px 15px 11px 10px;
@@ -123,30 +119,27 @@ a {
   
 }
 .app-p-box{
- margin-bottom: 710px;
+ margin-bottom: 200px;
 width: 70%;
 
 }
 .app-p{
+  font-weight: 600;
+  font-style: italic;
   font-size: 27px;
+  margin-bottom: 50px;
 color:#16527a;
 }
 .app-p2{
-font-size: 50px;
-color: rgb(134, 134, 134);
+  margin-bottom: 25px;
+  font-weight:900;
+font-size: 80px;
+color: rgb(124, 124, 124);
 
 }
 .app-p3{
-color: #cccccc;
-}
-
-.background-image{
-  padding-left: 260px;
-  background-color: #0f3953;
-  background-image: url(./img/workspace-with-computer.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:contain
+  font-weight: 600;
+color: #858585;
 }
 
 
@@ -156,7 +149,7 @@ color: #cccccc;
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
+  background-color: #FAFAF0;
   }
 
 .App-link {
@@ -165,55 +158,103 @@ color: #cccccc;
 .app-column{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0% 20% 7% 20%;
-  background: rgb(58,148,193);
-  background: linear-gradient(0deg, rgba(58,148,193,1) 14%, rgba(15,57,83,1) 71%);
+  background-color: #FAFAF0;
 }
 
 .app-mainh1{
  text-align: left;
-  color: aliceblue;
-  margin: 5% 5% 3% 3%;
+ font-size: 50px;
+  margin-bottom: 50px;
+  margin-left: 10%;
   pointer-events: none;
 }
 .app-aboutme-description{
-  border-radius: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
  text-align: left;
-  color: rgb(224, 236, 243);
   width: 100%;
-  background-color: #296b89;
+  background: rgb(250,250,240);
+  background: linear-gradient(90deg, rgba(250,250,240,1) 0%, rgba(255,191,85,1) 100%);
+}
+
+.app-aboutme-description div{
+  height: 80vh;
+
+display: flex;
+flex-direction: column;
+justify-content:center;
+}
+.imagediv{
+  display: inline-block;
+  max-width: 200%;
+  overflow: hidden;
+  vertical-align: top;
+  width: 200%;
+}
+.imagediv img {
+  border-radius: 0 !important;
+  max-width: 200%;
+  vertical-align: top;
+  height: 120%;
 }
 .app-aboutme {
   display: flex;
-  flex-direction:column;
+  justify-content: center;
+  flex-direction:row;
   margin:inherit;
-}
-.hover-effect {
-  transition: 700ms;
+  
 }
 
-.hover-effect:hover {
-  background-color: #081f2e;
-}
+
+
 .app-aboutme-description p {
 margin: 15px;
 }
-.app-tec-description{
-  padding: 10PX;
+.app-tec-descri2{
+margin-right: 15%;
+margin-top: 10%;
+
+  font-weight: bold;
+  vertical-align: top;
+  position: relative;
+  max-width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  flex-wrap: wrap;
-  background-color: #296b89;
+  flex-direction: column;
+  align-items:flex-start;
+ 
+  width: 100%;
+  height: 80vh;
+  background: transparent;
+  
+}
+.app-tec-description{
+ margin-left: 15%;
+ margin-top: 10%;
+ padding-bottom: 13%;
+  font-weight: bold;
+  vertical-align: top;
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+ justify-content:space-between;
+  width: 100%;
+  height: 80vh;
+  background: transparent;
+  
 }
 
 .app-tec-description div h3{
 padding-top: 7px;
 padding-left: 5px;
 padding-right: 10px;
-  color: rgb(224, 236, 243);
+  color:rgba(0,0,0,0.529);
 }
 .app-tec-description div{
   display: flex;
@@ -244,7 +285,7 @@ padding-right: 10px;
   color: #e9f3f3;
   padding: 10PX;
   display: flex;
-  border-radius: 10px;
+  
   background-color: #296b89;
 }
 .app-certificate-p{

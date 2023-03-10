@@ -1,8 +1,8 @@
 const bodycontent = [
     {id:1,
-        title:"Olá,",
+        title:"Olá, seja bem vindo.",
 title2:"Eu sou Ramon Fávero",
-title3:"Morador do Rio de Janeiro, Estutante de programação Fullstack com um apreço muito grande por Back-end.",
+title3:"Morador do Rio de Janeiro, Estudante de programação Fullstack com um apreço muito grande por Back-end.",
 headerSubTitle:"Estudante de Analise e desenvolvimento de sistemas"
     },
 {
@@ -12,7 +12,7 @@ headerSubTitle:"Estudante de Analise e desenvolvimento de sistemas"
 },
 {id:3,
 title:"Certificados",
-img:"https://raw.githubusercontent.com/RamonFavero/ramonportfolio/main/src/img/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg",
+img:"https://raw.githubusercontent.com/RamonFavero/ramonportfolio/main/src/img/udemy-certificate.jpg",
 corpo:"Certificado do Curso Full-Stack da Angela Yu:"
 
 }   

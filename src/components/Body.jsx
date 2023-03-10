@@ -9,7 +9,7 @@ function Body() {
   
     return (
         <div>
-            <div className="App-header background-image">
+            <div className="App-header">
               <div className="app-p-box">
             <p className='app-p'>{Bodycontent[0].title}</p>
             <p className='app-p2'>{Bodycontent[0].title2}</p>

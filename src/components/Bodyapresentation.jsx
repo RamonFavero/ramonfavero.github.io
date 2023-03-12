@@ -1,6 +1,6 @@
 import React from "react";
 
-function Bodycard(props) {
+function Bodyapresentation(props) {
     return (
           <div className='app-aboutme'>
               
@@ -19,4 +19,4 @@ function Bodycard(props) {
 }
 
 
-export default Bodycard
+export default Bodyapresentation

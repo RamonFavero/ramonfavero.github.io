@@ -1,5 +1,16 @@
 import '../App.css';
+import Apresentation from './Apresentation';
 import Body from './Body';
+import apresentationcontent from "../apresentationcontent";
+
+function apresentationCard(props) {
+ return (
+  <Apresentation 
+  title={props.title}
+  img={props.img}
+  corpo={props.corpo} />
+ ) 
+}
 
 
 function App() {
@@ -8,6 +19,9 @@ function App() {
     <div>
        
       <Body />
+      <div className='apresentation-projects'>
+{apresentationcontent.map(apresentationCard)}
+      </div>
       
     </div>
   );

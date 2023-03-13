@@ -21,16 +21,14 @@ function Body() {
       title={Bodycontent[1].title} 
       corpo={Bodycontent[1].corpo} /> 
       <Bodytec />
-      <h1 className='app-mainh1certificado'>Certificados</h1>
 
+      <h1 className='app-mainh1certificado'>Certificados</h1>
       <Bodycertificate 
       img={Bodycontent[2].img}
       corpo={Bodycontent[2].corpo} />
       </div> 
+      
       </div>
-          
-     
-       
     )
      
 }

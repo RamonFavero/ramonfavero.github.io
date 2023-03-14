@@ -3,15 +3,16 @@ import React from "react";
 
 function Apresentation(props) {
     return (
-<div class="a-card">
-    <div class="temporary_text">
-        <img src={props.img} alt="" />
+<div className="app-aboutme">
+    <div className="app-apresentation-description">
+    <div className="apresentation-imageparent">
+        <img className="certificateimg" src={props.img} alt="" />
     </div>
-<div class="a-card_content">
-    <span class="a-card_title">{props.title}</span>
+<div className="app-certificate-p">
+    <span className="apresentation-title">{props.title}</span>
        
-        <p class="a-card_description">{props.corpo}</p>
-    
+        <p className="apresentation-corpo">{props.corpo}</p>
+        </div>
 </div>
 </div>
     )

@@ -6,9 +6,12 @@ import apresentationcontent from "../apresentationcontent";
 function apresentationCard(props) {
  return (
   <Apresentation 
+  id={props.id}
   title={props.title}
   img={props.img}
-  corpo={props.corpo} />
+  corpo={props.corpo}
+  repositorio={props.repositorio}
+  projeto={props.projeto} />
  ) 
 }
 

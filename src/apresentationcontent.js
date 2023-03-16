@@ -2,7 +2,7 @@ const apresentationcontent = [
 {id:1,
 title:"Keeper App",
 img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/keeperapp.png?raw=true",
-corpo:"Este foi um projeto que fiz me inspirando no google Keep, aonde o usuário ao colocar seus compromissos do dia com o horário, o Keeper irá reorganiza-los em ordem de horário crescente e caso o compromisso passe do horario, o titulo irá ficar marcado como vermelho. Coisas para melhorar: colocar um calendário e botão de deletar card.",
+corpo:"Este foi um projeto da Udemy simulando Google Keep para praticar o uso de UseState() no react e como passar-lo para children components. Também adicionei horários no projeto e a mudança de cor caso o compromisso tenha passado do horário, coisas que não tinham originalmente.",
 repositorio:"https://github.com/RamonFavero/KeeperApp",
 projeto:"https://ramonfavero.github.io/KeeperApp/"
 },

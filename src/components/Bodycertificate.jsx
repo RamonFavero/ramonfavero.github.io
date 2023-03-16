@@ -10,7 +10,8 @@ function Bodycertificate(props) {
         <img className="certificateimg" src={props.img} alt="udemy certificate" />
         </div>
         <div className="app-certificate-p">
-          <h2>{props.corpo}</h2>
+          <h2>{props.title2}</h2>
+          <p>{props.corpo}</p>
           </div>
        </div>
       </div>

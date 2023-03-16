@@ -7,9 +7,9 @@ repositorio:"https://github.com/RamonFavero/KeeperApp",
 projeto:"https://ramonfavero.github.io/KeeperApp/"
 },
 {id:2,
-title:"Certificados",
+title:"Friend to the rescue",
 img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/adptafriend.png?raw=true",
- corpo:"Certificado do Curso Full-Stack da Angela Yu:",
+ corpo:"Como um bom pai de gato, fui motivado a fazer um site aonde depois de fazer login por uma API Oauth, o card branco renderizava pra que fosse adicionado um novo gato. Infelizmente a API se tornou obsoleta e tive que remover.",
  repositorio:"https://github.com/RamonFavero/adoptafriend",
 projeto:"https://ramonfavero.github.io/adoptafriend/"
 },

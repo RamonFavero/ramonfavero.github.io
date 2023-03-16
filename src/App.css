@@ -303,6 +303,7 @@ height:inherit;
 background: linear-gradient(90deg, rgba(250,237,205,1) 0%, rgba(250,250,240,1) 100%);
 }
 .app-certificate-p{
+  text-align: center;
   padding-top: 15px;
   display: flex;
   flex-direction: column;
@@ -374,6 +375,7 @@ color: #000000;
 
 }
 .apresentation-corpo{
+  
   min-width: 400px;
   text-align: center;
   margin-left: 12%;

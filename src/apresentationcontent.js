@@ -13,13 +13,7 @@ img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/adptafriend
  repositorio:"https://github.com/RamonFavero/adoptafriend",
 projeto:"https://ramonfavero.github.io/adoptafriend/"
 },
-{id:3,
-title:"Certificados",
-img:"https://raw.githubusercontent.com/RamonFavero/ramonportfolio/main/src/img/udemy-certificate.jpg",
-corpo:"Certificado do Curso Full-Stack da Angela Yu:",
-repositorio:"https://github.com/RamonFavero/KeeperApp",
-projeto:"https://ramonfavero.github.io/KeeperApp/"
-},
+
 ]
 
 export default apresentationcontent

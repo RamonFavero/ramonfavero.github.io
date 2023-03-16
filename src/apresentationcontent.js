@@ -8,10 +8,10 @@ projeto:"https://ramonfavero.github.io/KeeperApp/"
 },
 {id:2,
 title:"Certificados",
-img:"https://raw.githubusercontent.com/RamonFavero/ramonportfolio/main/src/img/udemy-certificate.jpg",
+img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/adptafriend.png?raw=true",
  corpo:"Certificado do Curso Full-Stack da Angela Yu:",
- repositorio:"https://github.com/RamonFavero/KeeperApp",
-projeto:"https://ramonfavero.github.io/KeeperApp/"
+ repositorio:"https://github.com/RamonFavero/adoptafriend",
+projeto:"https://ramonfavero.github.io/adoptafriend/"
 },
 {id:3,
 title:"Certificados",

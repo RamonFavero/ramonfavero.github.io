@@ -13,6 +13,13 @@ img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/adptafriend
  repositorio:"https://github.com/RamonFavero/adoptafriend",
 projeto:"https://ramonfavero.github.io/adoptafriend/"
 },
+{id:3,
+    title:"To-Do List",
+    img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/todolist.png?raw=true",
+     corpo:"Esse é um projeto de lista de tarefas bem simples, ótimo para firmar o conhecimento em states, map e props.",
+     repositorio:"https://github.com/RamonFavero/todolist",
+    projeto:"https://ramonfavero.github.io/todolist/"
+    },
 
 ]
 

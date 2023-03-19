@@ -21,7 +21,7 @@ function Apresentation(props) {
         <img className="apresentation-image" src={props.img} alt="" />
     </div>
     <div className="corpo-apresentation">
-<div className="app-certificate-p">
+<div className="apresentation-title-and-corpo">
 <span className="apresentation-title">{props.title}</span>
   
 <p className="apresentation-corpo">{props.corpo}</p>

@@ -19,8 +19,8 @@ headerSubTitle:"Estudante de Análise e desenvolvimento de sistemas na UVA - Tij
 title:"Certificados",
 img:"https://raw.githubusercontent.com/RamonFavero/ramonportfolio/main/src/img/udemy-certificate.jpg",
 title2:"Certificado do Curso Full-Stack da Angela Yu:",
-corpo:""
-}   
+corpo:"Um curso 'all-in-one' com uma linguagem simples e fácil de entender com uma progressão para uma linguagem mais técnica conforme o curso vai se estendendo. Além de todos os ensinamentos técnicos que me foi fornecido, a coisa que mais aprecio neste bootcamp foi o foco em nos ensinar a ler documentos. Para toda linguagem, API ou site existe uma documentação que pode ser difícil de entender, mas após pegar o jeito, o céu é o limite."
+}
 ]
 
 export default bodycontent

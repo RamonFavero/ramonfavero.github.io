@@ -10,7 +10,7 @@ function Bodytec(props) {
             <img id="portfolio-pic" src={img} alt="selfie for portfolio" />
             <div>
             <div className="portfolio-name">
-            <span className="nome">Ramon Fávero Peres de Moraes</span>
+            <span className="nome onvisibleSlideRight">Ramon Fávero Peres de Moraes</span>
             </div>
 
             <div className="subnome">

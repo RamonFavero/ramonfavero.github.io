@@ -1,5 +1,5 @@
 import React from "react";
-
+ 
 
 function Apresentation(props) {
     let reverseRow="row";
@@ -12,7 +12,7 @@ function Apresentation(props) {
     }else if (props.id%2) {
          reverseRow ="row"
     }
-    
+  
 
     return (
 

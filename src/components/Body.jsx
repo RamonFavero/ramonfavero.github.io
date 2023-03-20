@@ -7,23 +7,27 @@ import Bodytec from "./Bodytecnology";
 
 function Body() {
 
+  
+
 
   const handleClickScroll = () => {
     const element = document.getElementById('section-1');
     if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
   
+
+
     return (
-        <div>
+        <div >
+          
             <div className="App-header">
               <div className="app-p-box">
-            <p className='app-p'>{Bodycontent[0].title}</p>
-            <p className='app-p2'>{Bodycontent[0].title2}</p>
-            <p className='app-p3'>{Bodycontent[0].title3}</p>
-            <ul className="style2 buttons" style={{opacity: 1, transform: null}}>
+            <p className='app-p onvisibleSlideUp'>{Bodycontent[0].title}</p>
+            <p className='app-p2 onvisibleSlideRight'>{Bodycontent[0].title2}</p>
+            <p className='app-p3  onvisibleShow'>{Bodycontent[0].title3}</p>
+            <ul  className="style2 buttons onvisibleSlideDown" style={{opacity: 1, transform: null}}>
               <li>
                 <a onClick={handleClickScroll} href="#start" className="button n01">
                   <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +35,7 @@ function Body() {
             <span>Começar</span></a></li></ul>
               </div>
             </div>
-          <div className='app-column'>
+          <div  className='app-column'>
           <Bodyapresentation 
       title={Bodycontent[1].title} 
       corpo={Bodycontent[1].corpo}

@@ -2,7 +2,9 @@ import '../App.css';
 import Apresentation from './Apresentation';
 import Body from './Body';
 import apresentationcontent from "../apresentationcontent";
-
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 function apresentationCard(props) {
  return (
   <Apresentation 

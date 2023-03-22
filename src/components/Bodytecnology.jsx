@@ -1,28 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import Bodycontent from '../bodycontent';
 import img from "../img/WhatsApp Image 2023-03-09 at 22.28.17.jpeg";
 
 function Bodytec(props) {
+
+  const [state,setState] = useState(false);
+  const changevalueonScroll=()=>{
+
+  const scrollValue=document.documentElement.scrollTop;
+  if (scrollValue>1100) {
+    
+     setState(true)
+  }
+}
+window.addEventListener('scroll',changevalueonScroll)
+
+
     return (
         <div className='app-aboutme '>
         <div className="app-tec-descri2">
     <div className="portfolio-image-name">
-            <img id="portfolio-pic" src={img} alt="selfie for portfolio" />
-            <div>
+            <img id="portfolio-pic" className={state?"onVisibleSize":"invisible"} src={img} alt="selfie for portfolio" />
+            <div className={state?"onvisibleSlideRight ":"invisible"}>
             <div className="portfolio-name">
-            <span className="nome onvisibleSlideRight">Ramon Fávero Peres de Moraes</span>
+            <span className=" nome">Ramon Fávero Peres de Moraes</span>
             </div>
 
-            <div className="subnome">
+            <div className={state?"onvisibleSlideRight subnome":"invisible subnome"}>
             <span >{Bodycontent[0].headerSubTitle}</span>
             </div>
             </div>
               </div>
               
     </div>
-        <div className='app-tec-description'>
+        <div className={state?"onvisibleSlideUp app-tec-description":"invisible app-tec-description"}>
         <div>
-         <h1 className='app-mainh1'>Tecnologias</h1>
+         <h1 className="app-mainh1">Tecnologias</h1>
         
          </div>
     <div>

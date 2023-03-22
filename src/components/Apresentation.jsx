@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
  
 
+
 function Apresentation(props) {
+  
+    
     let reverseRow="row";
     let fundoProjeto="";
-    
+   
+   const [userWindow, setUserWindow] = useState(2550);
+   const [count, setCount] = useState(1);
     if (props.id%2===0) {
          reverseRow ="row-reverse";
          
@@ -12,21 +17,48 @@ function Apresentation(props) {
     }else if (props.id%2) {
          reverseRow ="row"
     }
-  
+    const [booleanArray, setBooleanArray] = useState([false]);
+
+        const [scrollY, setScrollY] = useState(0);
+      
+        useEffect(() => {
+          function handleScroll() {
+            setScrollY(window.scrollY);
+           
+          }
+      
+          window.addEventListener("scroll", handleScroll);
+      
+          return () => {
+            window.removeEventListener("scroll", handleScroll);
+          };
+        }, []);
+
+if (scrollY>userWindow) {
+   
+    if (booleanArray[count]===undefined) {
+        setCount(count+1)
+        setUserWindow(userWindow+600)
+        setBooleanArray(prevArray => [...prevArray, true]);
+    }
+    
+}
+
+
 
     return (
 
     <div className="app-apresentation-description" style={{flexDirection:reverseRow, Background:fundoProjeto}}>
-    <div className="apresentation-imageparent">
-        <img className="apresentation-image" src={props.img} alt="" />
+    <div  className="apresentation-imageparent">
+        <img  className={booleanArray[props.id] ?"onVisibleSize apresentation-image":"invisible apresentation-image"} src={props.img} alt="" />
     </div>
-    <div className="corpo-apresentation">
+    <div  className="corpo-apresentation">
 <div className="apresentation-title-and-corpo">
-<span className="apresentation-title">{props.title}</span>
+<span className={booleanArray[props.id] ?"onvisibleSlideUp apresentation-title":"invisible apresentation-title"}>{props.title}</span>
   
-<p className="apresentation-corpo">{props.corpo}</p>
+<p className={booleanArray[props.id] ?"onvisibleShow apresentation-corpo":"invisible apresentation-corpo"}>{props.corpo}</p>
 </div>
-<div>
+<div className={booleanArray[props.id] ?"onvisibleSlideDown":"invisible"}>
  <ul id="buttons01" className="style2 buttons" style={{opacity: 1, transform: null}}>
   <li>
    <a href={props.repositorio} className="button n01" >

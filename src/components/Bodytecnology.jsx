@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Bodycontent from '../bodycontent';
+import Bodycontent from './componentscontent/bodycontent';
 import img from "../img/WhatsApp Image 2023-03-09 at 22.28.17.jpeg";
 
 function Bodytec(props) {

@@ -1,6 +1,6 @@
 const apresentationcontent = [
 {id:1,
-title:"Keeper App",
+title:"Keeper App (Feito com ajuda de Angela Yu)",
 img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/keeperapp.png?raw=true",
 corpo:"Este foi um projeto da Udemy simulando Google Keep para praticar o uso de UseState() no react e como passar-lo para children components. Também adicionei horários no projeto e a mudança de cor caso o compromisso tenha passado do horário, coisas que não tinham originalmente.",
 repositorio:"https://github.com/RamonFavero/KeeperApp",
@@ -23,10 +23,17 @@ projeto:"https://ramonfavero.github.io/todolist/"
 {id:4,
 title:"Sign Up App",
 img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/signupapp.png?raw=true",
-corpo:"Ainda estou trabalhando na logica desse site.",
+corpo:"Uma pagina de login/registro com a lógica feita apenas no front-end para fazer a leitura dos dados e permitir o login/registro.",
 repositorio:"https://github.com/RamonFavero/signupapp",
 projeto:"https://ramonfavero.github.io/signupapp"
 },
+{id:5,
+title:"Taskify (Feito com ajuda de Piyush)",
+img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/taskify.png?raw=true",
+corpo:"Meu primeiro projeto feito com TypeScript, com a ajuda do Youtuber Piyush Agarwal, que lançou esse projeto em 2 videos totalizando 1:30h muito bem explicado e utilizando as boas praticas de JS, type e CSS. ",
+repositorio:"https://github.com/RamonFavero/taskify",
+projeto:"https://ramonfavero.github.io/taskify/"
+    },
 
 ]
 

@@ -1,14 +1,8 @@
 import React from "react";
 
-import Bodycontent from '../bodycontent';
-import Bodyapresentation from "./Bodyapresentation";
-import Bodycertificate from "./Bodycertificate";
-import Bodytec from "./Bodytecnology";
+import Bodycontent from './componentscontent/bodycontent';
 
 function Body() {
-
-  
-
 
   const handleClickScroll = () => {
     const element = document.getElementById('section-1');
@@ -17,7 +11,6 @@ function Body() {
     }
   };
   
-
 
     return (
         <div >
@@ -35,19 +28,7 @@ function Body() {
             <span>Começar</span></a></li></ul>
               </div>
             </div>
-          <div  className='app-column'>
-          <Bodyapresentation 
-      title={Bodycontent[1].title} 
-      corpo={Bodycontent[1].corpo}
-      corpo2={Bodycontent[1].corpo2} /> 
-      <Bodytec />
-
-      <h1 className='app-mainh1certificado'>Certificados</h1>
-      <Bodycertificate 
-      img={Bodycontent[2].img}
-      title2={Bodycontent[2].title2}
-      corpo={Bodycontent[2].corpo} />
-      </div> 
+          
       
       </div>
     )

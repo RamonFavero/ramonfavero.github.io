@@ -1,8 +1,9 @@
 import React from "react";
+import LanguageButton from "./LanguageButton";
 
-import Bodycontent from './componentscontent/bodycontent';
 
-function Body() {
+
+const Heading = (props,{language,handleAdd}) => {
 
   const handleClickScroll = () => {
     const element = document.getElementById('section-1');
@@ -10,16 +11,20 @@ function Body() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+ 
   
 
     return (
         <div >
-          
             <div className="App-header">
               <div className="app-p-box">
-            <p className='app-p onvisibleSlideUp'>{Bodycontent[0].title}</p>
-            <p className='app-p2 onvisibleSlideRight'>{Bodycontent[0].title2}</p>
-            <p className='app-p3  onvisibleShow'>{Bodycontent[0].title3}</p>
+              
+           
+
+
+            <p className='app-p onvisibleSlideUp'>{props.title1}</p>
+            <p className='app-p2 onvisibleSlideRight'>{props.title2}</p>
+            <p className='app-p3  onvisibleShow'>{props.title3}</p>
             <ul  className="style2 buttons onvisibleSlideDown" style={{opacity: 1, transform: null}}>
               <li>
                 <a onClick={handleClickScroll} href="#start" className="button n01">
@@ -34,6 +39,6 @@ function Body() {
     )
      
 }
-export default Body
+export default Heading
 
 

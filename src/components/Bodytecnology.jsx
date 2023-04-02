@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import img from "../img/WhatsApp Image 2023-03-09 at 22.28.17.jpeg";
+import tecnologycontent from "./contents/tecnologycontent";
 
-
-function Bodytec(props) {
+function Bodytec({language}) {
 
   const [state,setState] = useState(false);
   const changevalueonScroll=()=>{
@@ -27,7 +27,7 @@ window.addEventListener('scroll',changevalueonScroll)
             </div>
 
             <div className={state?"onvisibleSlideRight subnome":"invisible subnome"}>
-            <span >{props.headerSubTitle}</span>
+            <span >{tecnologycontent[language].headerSubTitle}</span>
             </div>
             </div>
               </div>
@@ -35,7 +35,7 @@ window.addEventListener('scroll',changevalueonScroll)
     </div>
         <div className={state?"onvisibleSlideUp app-tec-description":"invisible app-tec-description"}>
         <div>
-         <h1 className="app-mainh1">{props.tec}</h1>
+         <h1 className="app-mainh1">{tecnologycontent[language].tec}</h1>
         
          </div>
     <div>

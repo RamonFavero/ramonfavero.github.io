@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import bodycertificatecontent from './contents/bodycertificatecontent';
 
 
-
-function Bodycertificate(props) {
+function Bodycertificate({language}) {
 
   const [state,setState] = useState(false);
   const changevalueonScroll=()=>{
@@ -19,11 +19,11 @@ window.addEventListener('scroll',changevalueonScroll)
         <div className='app-aboutme'>
         <div className='app-certificate-description'>
       
-        <img className={state?"onVisibleSize certificateimg":"invisible certificateimg"} src={props.img} alt="udemy certificate" />
+        <img className={state?"onVisibleSize certificateimg":"invisible certificateimg"} src={bodycertificatecontent[0].img} alt="udemy certificate" />
   
         <div className="app-certificate-p">
-          <h2 className={state?"onvisibleSlideUp":"invisible"}>{props.title2}</h2>
-          <p className={state?"onvisibleSlideRight ":"invisible "}>{props.corpo}</p>
+          <h2 className={state?"onvisibleSlideUp":"invisible"}>{bodycertificatecontent[language].title2}</h2>
+          <p className={state?"onvisibleSlideRight ":"invisible "}>{bodycertificatecontent[language].corpo}</p>
           </div>
        </div>
       </div>

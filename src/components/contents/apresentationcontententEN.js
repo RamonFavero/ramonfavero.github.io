@@ -39,7 +39,14 @@ const apresentationcontententEN = [
     projeto:"https://ramonfavero.github.io/taskify/",
     buttonPTEN:"PAGE"
     },
-    
+     {id:6,
+title:"Spotflix",
+img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/spotflix.png?raw=true",
+corpo:"First time using Typescript without help and extracting data from an open API. ",
+repositorio:"https://github.com/RamonFavero/spotflix",
+projeto:"https://ramonfavero.github.io/spotflix/",
+buttonPTEN:"PÁGINA"
+    },
     ]
     
     export default apresentationcontententEN

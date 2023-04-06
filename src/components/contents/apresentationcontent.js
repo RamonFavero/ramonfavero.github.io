@@ -39,6 +39,14 @@ repositorio:"https://github.com/RamonFavero/taskify",
 projeto:"https://ramonfavero.github.io/taskify/",
 buttonPTEN:"PÁGINA"
     },
+    {id:6,
+title:"Spotflix",
+img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/spotflix.png?raw=true",
+corpo:"Primeira vez usando Typescript sem ajuda e retirando dados de uma API aberta.",
+repositorio:"https://github.com/RamonFavero/spotflix",
+projeto:"https://ramonfavero.github.io/spotflix/",
+buttonPTEN:"PÁGINA"
+    },
 
 ]
 

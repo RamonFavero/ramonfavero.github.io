@@ -1,21 +1,23 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import img from "../img/WhatsApp Image 2023-03-09 at 22.28.17.jpeg";
 import tecnologycontent from "./contents/tecnologycontent";
 
 function Bodytec({language}) {
 
   const [state,setState] = useState(false);
+
+  useEffect(() => {
   const changevalueonScroll=()=>{
-
-  const scrollValue=document.documentElement.scrollTop;
-  if (scrollValue>1100) {
-    
-     setState(true)
+    const scrollValue=document.documentElement.scrollTop;
+    if (scrollValue>1100) {
+       setState(true)
+    }
   }
-}
-window.addEventListener('scroll',changevalueonScroll)
-
-
+  if (!state) {
+    window.addEventListener('scroll',changevalueonScroll)
+ }
+ 
+ }, );
     return (
         <div className='app-aboutme '>
         <div className="app-tec-descri2">

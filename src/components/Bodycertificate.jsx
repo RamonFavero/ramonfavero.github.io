@@ -1,19 +1,22 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import bodycertificatecontent from './contents/bodycertificatecontent';
 
 
 function Bodycertificate({language}) {
 
   const [state,setState] = useState(false);
+ 
+  useEffect(() => {
   const changevalueonScroll=()=>{
-
   const scrollValue=document.documentElement.scrollTop;
   if (scrollValue>1843) {
-    
      setState(true)
   }
 }
-window.addEventListener('scroll',changevalueonScroll)
+if (!state) {
+  window.addEventListener('scroll',changevalueonScroll)
+}
+}, );
 
     return (
         <div className='app-aboutme'>

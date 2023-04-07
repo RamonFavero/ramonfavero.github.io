@@ -24,9 +24,7 @@ function Apresentation(props) {
         useEffect(() => {
           function handleScroll() {
             setScrollY(window.scrollY);
-           
           }
-      
           window.addEventListener("scroll", handleScroll);
       
           return () => {
@@ -38,8 +36,8 @@ if (scrollY>userWindow) {
    
     if (booleanArray[count]===undefined) {
         setCount(count+1)
-        setUserWindow(userWindow+600)
-        setBooleanArray(prevArray => [...prevArray, true]);
+        setUserWindow(userWindow+650)
+       setBooleanArray(prevArray => [...prevArray, true]);
     }
     
 }

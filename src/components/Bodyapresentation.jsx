@@ -1,17 +1,24 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import bodyapresentationcontent from './contents/bodyapresentationcontent';
 
 function Bodyapresentation({language}) {
 
    const [state,setState] = useState(false);
-   const changevalueonScroll=()=>{
-
+   
+   useEffect(() => {
+   
+  const changevalueonScroll=()=>{
    const scrollValue=document.documentElement.scrollTop;
    if (scrollValue>100) {
       setState(true)
    }
 }
-window.addEventListener('scroll',changevalueonScroll)
+if (!state) {
+   window.addEventListener('scroll',changevalueonScroll)
+}
+
+}, );
+
 
 
     return ( 

@@ -1,25 +1,31 @@
-import React, { useState,useEffect } from "react";
+import React, { useState,useEffect,useRef } from "react";
 import bodycertificatecontent from './contents/bodycertificatecontent';
 
 
 function Bodycertificate({language}) {
-
+  const thisDiv = useRef()
   const [state,setState] = useState(false);
  
   useEffect(() => {
-  const changevalueonScroll=()=>{
-  const scrollValue=document.documentElement.scrollTop;
-  if (scrollValue>1843) {
-     setState(true)
-  }
-}
-if (!state) {
-  window.addEventListener('scroll',changevalueonScroll)
-}
-}, );
+   const y = thisDiv.current.getClientRects()[0].top
+   const windowSize = window.innerHeight
+   const changevalueonScroll=()=>{
+   
+    const docViewTop =document.documentElement.scrollTop;
+    
+    if (docViewTop+windowSize-y >= 300 ) {
+       setState(true)
+    }
+ 
+ }
+ if (!state) {
+    window.addEventListener('scroll',changevalueonScroll)
+ }
+ 
+ }, );
 
     return (
-        <div className='app-aboutme'>
+        <div ref={thisDiv} className='app-aboutme'>
         <div className='app-certificate-description'>
       
         <img className={state?"onVisibleSize certificateimg":"invisible certificateimg"} src={bodycertificatecontent[0].img} alt="udemy certificate" />

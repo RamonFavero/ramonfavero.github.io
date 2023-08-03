@@ -1,36 +1,60 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
  
 
 
 function Apresentation(props) {
-  
-    
+
+  const thisDiv = useRef()
     let reverseRow="row";
     let fundoProjeto="";
-   
-   const [userWindow, setUserWindow] = useState(2550);
-   const [count, setCount] = useState(1);
     if (props.id%2===0) {
          reverseRow ="row-reverse";
-         
          fundoProjeto = "linear-gradient(90deg, rgba(250,237,205,1) 0%, rgba(250,250,240,1) 100%)";
     }else if (props.id%2) {
          reverseRow ="row"
     }
-    const [booleanArray, setBooleanArray] = useState([false]);
+    const [booleanArray,setBooleanArray] = useState(false);
+    const [count, setCount] = useState(1);
+    useEffect(() => {
+      const y = thisDiv.current.getClientRects()[0].top
+      const windowSize = window.innerHeight
 
-        const [scrollY, setScrollY] = useState(0);
+      const changevalueonScroll=()=>{
+        
+       const docViewTop =document.documentElement.scrollTop;
+       console.log(props.id,docViewTop+windowSize-y)
+
+        if (docViewTop+windowSize-y >= 452 ) {
+          setBooleanArray(true);
+         }
+        
+        
+       
+   
+    }
+   
+       window.addEventListener('scroll',changevalueonScroll)
+       return () => {
+        window.addEventListener('scroll',changevalueonScroll)
+       }
+    },[] );
+/*
+    const [booleanArray, setBooleanArray] = useState([false]);
+    const [userWindow, setUserWindow] = useState(2550);
+    const [count, setCount] = useState(1);
+    const [scrollY, setScrollY] = useState(0);
       
         useEffect(() => {
           function handleScroll() {
             setScrollY(window.scrollY);
+         console.log(window.scrollY);
           }
           window.addEventListener("scroll", handleScroll);
-      
+        
           return () => {
             window.removeEventListener("scroll", handleScroll);
           };
-        }, []);
+        }, );
 
 if (scrollY>userWindow) {
    
@@ -38,25 +62,26 @@ if (scrollY>userWindow) {
         setCount(count+1)
         setUserWindow(userWindow+650)
        setBooleanArray(prevArray => [...prevArray, true]);
+       console.log(userWindow);
     }
     
 }
-
+*/
 
 
     return (
 
-    <div className="app-apresentation-description" style={{flexDirection:reverseRow, Background:fundoProjeto}}>
+    <div ref={thisDiv} className="app-apresentation-description" style={{flexDirection:reverseRow, Background:fundoProjeto}}>
     <div  className="apresentation-imageparent">
-        <img  className={booleanArray[props.id] ?"onVisibleSize apresentation-image":"invisible apresentation-image"} src={props.img} alt="" />
+        <img  className={booleanArray ?"onVisibleSize apresentation-image":"invisible apresentation-image"} src={props.img} alt="" />
     </div>
     <div  className="corpo-apresentation">
 <div className="apresentation-title-and-corpo">
-<span className={booleanArray[props.id] ?"onvisibleSlideUp apresentation-title":"invisible apresentation-title"}>{props.title}</span>
+<span className={booleanArray ?"onvisibleSlideUp apresentation-title":"invisible apresentation-title"}>{props.title}</span>
   
-<p className={booleanArray[props.id] ?"onvisibleShow apresentation-corpo":"invisible apresentation-corpo"}>{props.corpo}</p>
+<p className={booleanArray ?"onvisibleShow apresentation-corpo":"invisible apresentation-corpo"}>{props.corpo}</p>
 </div>
-<div className={booleanArray[props.id] ?"onvisibleSlideDown":"invisible"}>
+<div className={booleanArray ?"onvisibleSlideDown":"invisible"}>
  <ul id="buttons01" className="style2 buttons" style={{opacity: 1, transform: null}}>
   <li>
    <a href={props.repositorio} className="button n01" >

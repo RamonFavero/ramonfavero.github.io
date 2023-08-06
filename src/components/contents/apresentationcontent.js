@@ -1,20 +1,13 @@
 const apresentationcontent = [
 {id:1,
-title:"Keeper App (Feito com ajuda de Angela Yu)",
+title:"Keeper App",
 img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/keeperapp.png?raw=true",
-corpo:"Este foi um projeto da Udemy simulando Google Keep para praticar o uso de UseState() no react e como passar-lo para children components. Também adicionei horários no projeto e a mudança de cor caso o compromisso tenha passado do horário, coisas que não tinham originalmente.",
+corpo:"Este foi um projeto simulando Google Keep para praticar o uso de UseState().",
 repositorio:"https://github.com/RamonFavero/KeeperApp",
 projeto:"https://ramonfavero.github.io/KeeperApp/",
 buttonPTEN:"PÁGINA"
 },
-{id:2,
-title:"Friend to the rescue",
-img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/adptafriend.png?raw=true",
- corpo:"Como um bom pai de gato, fui motivado a fazer um site aonde depois de fazer login por uma API Oauth, o card branco renderizava pra que fosse adicionado um novo gato. Infelizmente a API se tornou obsoleta e tive que remover.",
- repositorio:"https://github.com/RamonFavero/adoptafriend",
-projeto:"https://ramonfavero.github.io/adoptafriend/",
-buttonPTEN:"PÁGINA"
-},
+
 {id:3,
 title:"To-Do List",
 img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/todolist.png?raw=true",
@@ -32,9 +25,9 @@ projeto:"https://ramonfavero.github.io/signupapp",
 buttonPTEN:"PÁGINA"
 },
 {id:5,
-title:"Taskify (Feito com ajuda de Piyush)",
+title:"Taskify",
 img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/taskify.png?raw=true",
-corpo:"Meu primeiro projeto feito com TypeScript, com a ajuda do Youtuber Piyush Agarwal, que lançou esse projeto em 2 videos totalizando 1:30h muito bem explicado e utilizando as boas praticas de JS, type e CSS. ",
+corpo:"Meu primeiro projeto feito com TypeScript. ",
 repositorio:"https://github.com/RamonFavero/taskify",
 projeto:"https://ramonfavero.github.io/taskify/",
 buttonPTEN:"PÁGINA"
@@ -42,7 +35,7 @@ buttonPTEN:"PÁGINA"
     {id:6,
 title:"Spotflix",
 img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/spotflix.png?raw=true",
-corpo:"Primeira vez usando Typescript sem ajuda e retirando dados de uma API aberta.",
+corpo:"Primeira vez usando Typescript retirando dados de uma API aberta.",
 repositorio:"https://github.com/RamonFavero/spotflix",
 projeto:"https://ramonfavero.github.io/spotflix/",
 buttonPTEN:"PÁGINA"

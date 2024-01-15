@@ -5,7 +5,7 @@ img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/keeperapp.p
 corpo:"Este foi um projeto simulando Google Keep para praticar o uso de UseState().",
 repositorio:"https://github.com/RamonFavero/KeeperApp",
 projeto:"https://ramonfavero.github.io/KeeperApp/",
-buttonPTEN:"PÁGINA"
+buttonPTEN:"PÁGINAa"
 },
 
 {id:3,

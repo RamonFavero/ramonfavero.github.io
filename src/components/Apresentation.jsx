@@ -8,10 +8,10 @@ function Apresentation(props) {
     let reverseRow="row";
     let fundoProjeto="";
     if (props.id%2===0) {
-         reverseRow ="row-reverse";
+         reverseRow ="row";
          fundoProjeto = "linear-gradient(90deg, rgba(250,237,205,1) 0%, rgba(250,250,240,1) 100%)";
     }else if (props.id%2) {
-         reverseRow ="row"
+         reverseRow ="row-reverse"
     }
     const [booleanArray,setBooleanArray] = useState(false);
     const [count, setCount] = useState(1);

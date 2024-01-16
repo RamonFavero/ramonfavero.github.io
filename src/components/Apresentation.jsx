@@ -1,17 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
- 
 
 
 function Apresentation(props) {
-
+  
   const thisDiv = useRef()
-    let reverseRow="row";
+  let reverseRow="row";
     let fundoProjeto="";
     if (props.id%2===0) {
-         reverseRow ="row";
+         reverseRow ="row-reverse";
          fundoProjeto = "linear-gradient(90deg, rgba(250,237,205,1) 0%, rgba(250,250,240,1) 100%)";
-    }else if (props.id%2) {
-         reverseRow ="row-reverse"
+    } else if ((props.id%2)===1) {
+         reverseRow ="row"
     }
     const [booleanArray,setBooleanArray] = useState(false);
     const [count, setCount] = useState(1);
@@ -38,35 +37,6 @@ function Apresentation(props) {
         window.addEventListener('scroll',changevalueonScroll)
        }
     },[] );
-/*
-    const [booleanArray, setBooleanArray] = useState([false]);
-    const [userWindow, setUserWindow] = useState(2550);
-    const [count, setCount] = useState(1);
-    const [scrollY, setScrollY] = useState(0);
-      
-        useEffect(() => {
-          function handleScroll() {
-            setScrollY(window.scrollY);
-         console.log(window.scrollY);
-          }
-          window.addEventListener("scroll", handleScroll);
-        
-          return () => {
-            window.removeEventListener("scroll", handleScroll);
-          };
-        }, );
-
-if (scrollY>userWindow) {
-   
-    if (booleanArray[count]===undefined) {
-        setCount(count+1)
-        setUserWindow(userWindow+650)
-       setBooleanArray(prevArray => [...prevArray, true]);
-       console.log(userWindow);
-    }
-    
-}
-*/
 
 
     return (

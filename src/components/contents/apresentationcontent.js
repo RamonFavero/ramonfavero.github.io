@@ -1,11 +1,11 @@
 const apresentationcontent = [
 {id:1,
-title:"Keeper Appp",
+title:"Keeper App",
 img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/keeperapp.png?raw=true",
 corpo:"Este foi um projeto simulando Google Keep para praticar o uso de UseState().",
 repositorio:"https://github.com/RamonFavero/KeeperApp",
 projeto:"https://ramonfavero.github.io/KeeperApp/",
-buttonPTEN:"PÁGINAa"
+buttonPTEN:"PÁGINA"
 },
 
 {id:3,

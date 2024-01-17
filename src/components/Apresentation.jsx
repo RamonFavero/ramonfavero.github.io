@@ -26,10 +26,6 @@ function Apresentation(props) {
         if (docViewTop+windowSize-y >= 452 ) {
           setBooleanArray(true);
          }
-        
-        
-       
-   
     }
    
        window.addEventListener('scroll',changevalueonScroll)
@@ -40,7 +36,7 @@ function Apresentation(props) {
 
 
     return (
-
+<div>
     <div ref={thisDiv} className="app-apresentation-description" style={{flexDirection:reverseRow, Background:fundoProjeto}}>
     <div  className="apresentation-imageparent">
         <img  className={booleanArray ?"onVisibleSize apresentation-image":"invisible apresentation-image"} src={props.img} alt="" />
@@ -65,6 +61,7 @@ function Apresentation(props) {
    <span className="label">{props.buttonPTEN}</span></a></li>
    </ul>
   </div>
+</div>
 </div>
 </div>
     )

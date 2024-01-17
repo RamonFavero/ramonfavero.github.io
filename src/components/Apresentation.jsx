@@ -4,13 +4,18 @@ import React, { useState, useEffect, useRef } from "react";
 function Apresentation(props) {
   
   const thisDiv = useRef()
-  let reverseRow="row";
+  let reverseRow="";
     let fundoProjeto="";
-    if (props.id%2===0) {
-         reverseRow ="row-reverse";
+    if (props.id===1) {
+      console.log(props.id);
+      reverseRow ="row";
+         fundoProjeto = "linear-gradient(90deg, rgba(250,237,205,1) 0%, rgba(250,250,240,1) 100%)";
+    }
+    else if (props.id%2===0) {
+         reverseRow ="row";
          fundoProjeto = "linear-gradient(90deg, rgba(250,237,205,1) 0%, rgba(250,250,240,1) 100%)";
     } else if ((props.id%2)===1) {
-         reverseRow ="row"
+         reverseRow ="row-reverse"
     }
     const [booleanArray,setBooleanArray] = useState(false);
     const [count, setCount] = useState(1);
@@ -21,7 +26,7 @@ function Apresentation(props) {
       const changevalueonScroll=()=>{
         
        const docViewTop =document.documentElement.scrollTop;
-       console.log(props.id,docViewTop+windowSize-y)
+      //  console.log(props.id,docViewTop+windowSize-y)
 
         if (docViewTop+windowSize-y >= 452 ) {
           setBooleanArray(true);
@@ -36,7 +41,7 @@ function Apresentation(props) {
 
 
     return (
-<div>
+
     <div ref={thisDiv} className="app-apresentation-description" style={{flexDirection:reverseRow, Background:fundoProjeto}}>
     <div  className="apresentation-imageparent">
         <img  className={booleanArray ?"onVisibleSize apresentation-image":"invisible apresentation-image"} src={props.img} alt="" />
@@ -63,7 +68,7 @@ function Apresentation(props) {
   </div>
 </div>
 </div>
-</div>
+
     )
     
 }

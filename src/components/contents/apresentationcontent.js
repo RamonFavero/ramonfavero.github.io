@@ -7,7 +7,6 @@ repositorio:"https://github.com/RamonFavero/KeeperApp",
 projeto:"https://ramonfavero.github.io/KeeperApp/",
 buttonPTEN:"PÁGINA"
 },
-
 {id:3,
 title:"To-Do List",
 img:"https://github.com/RamonFavero/ramonportfolio/blob/main/src/img/todolist.png?raw=true",

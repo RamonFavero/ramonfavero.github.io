@@ -7,7 +7,6 @@ function Apresentation(props) {
   let reverseRow="";
     let fundoProjeto="";
     if (props.id===1) {
-      console.log(props.id);
       reverseRow ="row";
          fundoProjeto = "linear-gradient(90deg, rgba(250,237,205,1) 0%, rgba(250,250,240,1) 100%)";
     }
@@ -18,7 +17,6 @@ function Apresentation(props) {
          reverseRow ="row-reverse"
     }
     const [booleanArray,setBooleanArray] = useState(false);
-    const [count, setCount] = useState(1);
     useEffect(() => {
       const y = thisDiv.current.getClientRects()[0].top
       const windowSize = window.innerHeight

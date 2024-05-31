@@ -3,17 +3,17 @@
   margin: 0;
   padding: 0;
   border: 0;
-
   font-family: 'Inter', sans-serif;
-  font-size: 18pt;
+  font-size: 16pt;
   font-weight: bold;
   color: rgb(0,0,0,0.529);
   
 }
-html{
-  min-width: fit-content;
-}
 
+.appParent{
+  width: 100%;
+  min-width: 1000px;
+}
 /*/////// language button //////////*/
 .languageButton{
   position: relative;
@@ -104,23 +104,19 @@ html{
   flex-direction: row;
 }
 .portfolio-name{
-  
-  height: 50px;
-  display: flex;
- 
+max-width: 15em;
+ margin-left: 0.5em;
   padding-top: 10px;
 }
 .nome{
   font-size: 33px;
   font-weight: 900;
-  width: 300px;
-  padding-left: 12px;
+  
+  
 }
 .subnome{
   height: 10px;
-  padding-top: 0px;
-  padding-left: 12px;
-margin-top: 100px;
+margin-top: 1em;
 }
 
 #header {
@@ -239,14 +235,15 @@ color: #858585;
   color: #61dafb;
 }
 .app-column{
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #FAFAF0;
 }
 
 .app-mainh1{
-  margin-left: 50px;
- text-align: left;
+  
+ 
  font-size: 50px;
   margin-bottom: 50px;
   pointer-events: none;
@@ -261,10 +258,10 @@ color: #858585;
    margin-left: 40%;
  }
 .app-aboutme-description{
+  width: 100%;
   font-weight: bold;
   vertical-align: top;
   position: relative;
-  max-width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -273,70 +270,81 @@ color: #858585;
   background: linear-gradient(90deg, rgba(250,237,205,1) 0%, rgba(250,250,240,1) 100%);
 }
 
-.app-aboutme-description div{
+.app-aboutme-description-text{
+  text-align: center;
   min-height: 25rem;
-width: 40%;
+width: 50%;
 display: flex;
 flex-direction: column;
 justify-content:center;
 }
 .imagediv{
   vertical-align: top;
+  min-height: 25em;
+  width: 50%;
+  overflow: hidden;
 }
 .imagediv img {
   border-radius: 0 !important;
-  width: 150%;
   vertical-align: top;
-  min-height: 25rem;
 }
 .app-aboutme {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction:row;
-  margin:inherit;
+
 }
 
+
 .app-certificates {
+  width: 100%;
   display: flex;
   flex-direction:column;
-  margin:inherit;
+  align-content: center;
+  
 }
+
 
 
 .app-aboutme-description p {
 margin: 15px;
 }
 .app-tec-descri2{
-margin-left: 10%;
 margin-top: 10%;
-
   font-weight: bold;
   vertical-align: top;
   position: relative;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items:flex-start;
- 
-  width: 100%;
-  height: 80vh;
+
   background: transparent;
-  
+}
+@media (max-width:980px){
+  .app-aboutme {
+    flex-direction:column;
+    align-items: center;
+  }
+  .portfolio-image-name{
+    flex-direction: column;
+    align-items: center;
+  }
+  .app-tec-descri2{
+    width: 50%;
+  }
 }
 .app-tec-description{
- margin-right: 15%;
  margin-top: 10%;
- ;
  padding-bottom: 13%;
   font-weight: bold;
   vertical-align: top;
   position: relative;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items:center;
  justify-content:space-between;
-  width: 100%;
+  width: 30%;
   height: 50vh;
   background: transparent;
   
@@ -371,7 +379,6 @@ padding-right: 10px;
 }
 
 .app-certificate-description{
-  
   flex-direction: row;
   color: #e9f3f3;
 max-height: 600px;
@@ -382,13 +389,14 @@ background: linear-gradient(90deg, rgba(250,237,205,1) 0%, rgba(250,250,240,1) 1
 }
 .app-certificate-p{
   text-align: center;
-  
   display: flex;
   flex-direction: column;
   margin-left: 5%;
  width:30%;
  height: 60%;
 }
+
+
 .app-certificate-p h2 {
   margin-top: 70px;
  font-weight: 900;
@@ -404,11 +412,13 @@ background: linear-gradient(90deg, rgba(250,237,205,1) 0%, rgba(250,250,240,1) 1
 
 /* ///////////// apresentation card //////////   */
 .apresentation-projects{
+  max-width: 100%;
   vertical-align: top;
     position: relative;
   height: inherit;
   background-color:#FAFAF0;
 }
+
 
 #buttons01 {
   display: flex;
@@ -426,28 +436,33 @@ background: linear-gradient(90deg, rgba(250,237,205,1) 0%, rgba(250,250,240,1) 1
   line-height: 2.75rem;
 }
 .apresentation-imageparent{
-  width: 100%;
+  width: 50%;
   padding-right: 20px;
   padding-left: 20px;
 }
 .apresentation-image{
   height: 100%;
-  width: 935px;
+  width: 100%;
+  min-width: 20em;
 }
 
 .app-apresentation-description{
   background-color:#FAFAF0;
-  min-width: 100%;
   display: flex;
   text-align: center;
-  padding-top:10%;
+  padding-top:5em;
 }
+@media (max-width:1000px){
+  .app-apresentation-description{
+    flex-direction: column;
+  }
+} 
 .corpo-apresentation{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 100%;
+  width: 50%;
 }
 .apresentation-title-and-corpo{
   display: flex;
@@ -475,7 +490,7 @@ color: #000000;
 }
 .buttons.style2 li {
   margin-right: 50px;
-  margin-left: 50px;
+  margin-left: 5%;
 }
 
 .buttons.style2 li a {

@@ -58,7 +58,7 @@ const App=() => {
 
   return (
    
-    <div>
+    <div className="appParent">
   
       
     <Heading 

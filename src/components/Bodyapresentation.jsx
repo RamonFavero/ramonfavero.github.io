@@ -27,18 +27,18 @@ function Bodyapresentation({language}) {
 
 
     return ( 
+   
     <div ref={thisDiv} id="section-1" className='app-aboutme-description'>
-      <div>
+      <div className="app-aboutme-description-text">
       <h1 className={state?"onvisibleSlideRight app-mainh1":"invisible app-mainh1"} >{bodyapresentationcontent[language].title}</h1>
          <p className={state?"onvisibleSlideUp":"invisible"}>{bodyapresentationcontent[language].corpo}</p>
          <p className={state?"onvisibleSlideUp":"invisible"}>{bodyapresentationcontent[language].corpo2}</p>
          </div>
          <div className="imagediv">
             <img className={state?"onVisibleSize":"invisible"} src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
-         </div>
-    </div>
-          
-       
+      </div>
+      </div>
+   
     )
 }
 

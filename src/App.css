@@ -256,6 +256,7 @@ color: #858585;
    margin-bottom: 50px;
    pointer-events: none;
    margin-left: 40%;
+   max-width: fit-content;
  }
 .app-aboutme-description{
   width: 100%;
@@ -287,6 +288,7 @@ justify-content:center;
 .imagediv img {
   border-radius: 0 !important;
   vertical-align: top;
+  
 }
 .app-aboutme {
   width: 100%;
